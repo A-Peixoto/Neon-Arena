@@ -1,4 +1,4 @@
-// 1) Alterna entre modo claro e escuro
+
 const btnTema = document.getElementById("btnTema");
 btnTema.addEventListener("click", () => {
   const html = document.documentElement;
@@ -7,7 +7,7 @@ btnTema.addEventListener("click", () => {
   btnTema.textContent = novoTema === "dark" ? "Modo claro" : "Modo escuro";
 });
 
-// 2) Contagem regressiva para o campeonato
+
 function atualizarContagem() {
   const dataEvento = new Date("2026-12-20T20:00:00");
   const diferenca = dataEvento - new Date();
@@ -27,7 +27,6 @@ function atualizarContagem() {
 atualizarContagem();
 setInterval(atualizarContagem, 1000);
 
-// 3) Validação e mensagem do formulário
 const form = document.getElementById("formContato");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
