@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap');
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; }
+h1, .navbar-brand, .section-title { font-family: 'Orbitron', sans-serif; }
+section { scroll-margin-top: 76px; }
+.hero {
+  min-height: 100vh;
+  padding: 100px 0 60px;
+  background: radial-gradient(circle at 20% 20%, #173c70 0, transparent 35%),
+              radial-gradient(circle at 80% 70%, #41165f 0, transparent 35%),
+              linear-gradient(135deg, #080b18, #10182d 55%, #080b18);
+  position: relative;
+}
+.hero h1 { letter-spacing: 3px; text-shadow: 0 0 28px #0dcaf0a0; }
+.hero .lead { max-width: 650px; color: #d4d9e8; }
+.section-title { font-weight: 700; }
+.feature-card { border: 1px solid var(--bs-border-color); background: var(--bs-body-bg); border-radius: 16px; transition: transform .2s, border-color .2s; }
+.feature-card:hover { transform: translateY(-7px); border-color: #0dcaf0; }
+.feature-icon { font-size: 2.5rem; margin-bottom: 14px; }
+.mode-box { height: 100%; padding: 24px 12px; border: 1px solid var(--bs-border-color); border-radius: 14px; }
+.mode-box span { font-size: 2rem; }
+.gallery-img { height: 460px; object-fit: cover; filter: brightness(.8); }
+.modal-content { border: 1px solid #0dcaf0; }
+footer { background: #070a13; }
+@media (max-width: 576px) {
+  .hero h1 { font-size: 2.8rem; }
+  .hero .btn { display: block; margin: 10px auto !important; max-width: 260px; }
+  .gallery-img { height: 260px; }
+}
